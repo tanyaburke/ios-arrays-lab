@@ -10,6 +10,11 @@ Create an array of strings called `colors` that contain "orange", "red", "yellow
 
 Then, using array subscripting and string interpolation, print out the String `"orange, yellow, and lavender are some of my favorite colors"`.
 
+var colors = ["orange ", "red ", "yellow ", "turquoise", "lavender "]
+
+print("\(colors[0]), \(colors[2]), \(colors[4]) are some of my favorite colors")
+
+
 
 ## Question 2
 
@@ -17,12 +22,30 @@ Remove "Illinois" and "Kansas" from the array below.
 
 `var westernStates = ["California", "Oregon", "Washington", "Idaho", "Illinois", "Kansas"]`
 
+westernStates.popLast()
+westernStates.popLast()
+
+print(westernStates)
+
+
+
 
 ## Question 3
 
 Iterate through the array below. For each state, print out the name of the state, a colon, and whether it is or is not **in the continental United States.**
 
 `let moreStates = ["Hawaii", "New Mexico", "Alaska", "Montana", "Texas", "New York", "Florida"]`
+
+let moreStates = ["Hawaii", "New Mexico", "Alaska", "Montana", "Texas", "New York", "Florida"]
+for states in moreStates {
+if states != "Hawaii"{
+print("\(states): part of the continental United States")
+} else {
+    print ("\(states): not part of the continental United States")
+}
+}
+
+
 
 
 ## Question 4
